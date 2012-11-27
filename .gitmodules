@@ -1,3 +1,6 @@
 [submodule "my-recipes/cookbooks/sphinx"]
 	path = my-recipes/cookbooks/sphinx
 	url = https://github.com/RiotGames/sphinx-cookbook
+[submodule "my-recipes/kaize-cookbooks"]
+	path = my-recipes/kaize-cookbooks
+	url = https://github.com/kaize/cookbooks
