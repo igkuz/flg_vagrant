@@ -7,12 +7,12 @@
     "recipe[apt]",
     "recipe[mysql::server]",
     "recipe[sphinx]",
-    "recipe[imagemagick]",
+    "recipe[imagemagick]"
   ],
-  "mysql" : {
-    "server_root_password" : "root"
-  },
   "override_attributes" : {
+    "mysql" : {
+      "server_root_password" : "root"
+    },
     "sphinx" : {
       "configure_flags" : [
         "--without-pgsql",
