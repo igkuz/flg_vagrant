@@ -10,3 +10,12 @@
 [submodule "my-recipes/cookbooks/imagemagick"]
 	path = my-recipes/cookbooks/imagemagick
 	url = https://github.com/opscode-cookbooks/imagemagick
+[submodule "my-recipes/cookbooks/php"]
+	path = my-recipes/cookbooks/php
+	url = https://github.com/opscode-cookbooks/php.git
+[submodule "my-recipes/cookbooks/nginx"]
+	path = my-recipes/cookbooks/nginx
+	url = https://github.com/opscode-cookbooks/nginx.git
+[submodule "my-recipes/cookbooks/memcached"]
+	path = my-recipes/cookbooks/memcached
+	url = https://github.com/opscode-cookbooks/memcached.git
