@@ -1,0 +1,20 @@
+{
+  "name" : "base",
+  "chef_type" : "role",
+  "json_class" : "Chef::Role",
+  "description" : "Base Role",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[sphinx]",
+    "recipe[imagemagick]"
+  ],
+  "override_attributes" : {
+    "sphinx" : {
+      "configure_flags" : [
+        "--without-pgsql",
+        "--with-mysql",
+        "--without-stemmer"
+      ]
+    }
+  }
+}
