@@ -5,9 +5,13 @@
   "description" : "Base Role",
   "run_list": [
     "recipe[apt]",
+    "recipe[mysql::server]",
     "recipe[sphinx]",
-    "recipe[imagemagick]"
+    "recipe[imagemagick]",
   ],
+  "mysql" : {
+    "server_root_password" : "root"
+  },
   "override_attributes" : {
     "sphinx" : {
       "configure_flags" : [
