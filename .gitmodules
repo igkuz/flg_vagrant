@@ -4,3 +4,12 @@
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
 	url = git://github.com/opscode-cookbooks/build-essential.git
+[submodule "cookbooks/xml"]
+	path = cookbooks/xml
+	url = git://github.com/opscode-cookbooks/xml.git
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = git://github.com/opscode-cookbooks/mysql.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git://github.com/opscode-cookbooks/apt.git
