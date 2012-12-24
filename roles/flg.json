@@ -1,0 +1,9 @@
+{
+  "name" : "flg",
+  "chef_type" : "role",
+  "json_class" : "Chef::Role",
+  "description" : "Base FLG role",
+  "run_list" : [
+    "recipe[flg]"
+  ]
+}
