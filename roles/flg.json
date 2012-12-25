@@ -13,11 +13,11 @@
     "php" : {
       "url" : "http://us3.php.net/distributions",
       "version" : "5.3.20"
-    },
-//    "mysql" : {
-//      "server_root_password" : "root",
-//      "server_repl_password" : "root",
-//      "server_debian_password" : "root"
-//    }
+    }
+    "mysql" : {
+      "server_root_password" : "root",
+      "server_repl_password" : "root",
+      "server_debian_password" : "root"
+    }
   }
 }

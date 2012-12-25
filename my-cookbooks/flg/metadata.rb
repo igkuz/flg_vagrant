@@ -4,3 +4,5 @@ license                   "Private"
 description               "Installs and configures FLG project"
 
 depends "php"
+depends "mysql"
+depends "database"

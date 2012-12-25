@@ -42,16 +42,26 @@ node["php"]["configure_options"] = %W{
 }
 include_recipe "php::source"
 
-#include_recipe "mysql::server"
-#include_recipe "database"
+include_recipe "mysql::server"
 
-#mysql_connection_info = {
-#  :host => "localhost",
-#  :username => "root",
-#  :password => node["mysql"]["server_root_password"]
-#}
-#
-#mysql_database "flg" do
-#  connection mysql_connection_info
-#  action :create
-#end
+mysql_connection_info = {
+    :host => "localhost",
+    :username => "root",
+    :password => node["mysql"]["server_root_password"]
+  }
+
+mysql_database "flg" do
+  connection mysql_connection_info
+  action :create
+end
+
+template "/etc/nginx/sites-enabled/flg.lo.conf" do
+  source "flg.conf.erb"
+  variables :server_name => 'flg.lo',
+            :app_directory => "/apps",
+            :log_directory => "/var/log/nginx/"
+end
+
+nginx_site "flg.lo.conf" do
+  enable true
+end

@@ -3,7 +3,8 @@
 
 Vagrant::Config.run do |config|
   config.vm.box = "flg"
-  config.vm.box_url = "~/boxes/UbuntuServer12.04amd64.box"
+  config.vm.box_url = "https://dl.dropbox.com/u/1543052/Boxes/UbuntuServer12.04amd64.box"
+  config.vm.box_url = "~/vagrant/UbuntuServer12.04amd64.box"
 
   # Assign this VM to a host-only network IP, allowing you to access it
   # via the IP. Host-only networks can talk to the host machine as well as
