@@ -25,3 +25,6 @@
 [submodule "cookbooks/database"]
 	path = cookbooks/database
 	url = git://github.com/opscode-cookbooks/database.git
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = git://github.com/opscode-cookbooks/openssl.git

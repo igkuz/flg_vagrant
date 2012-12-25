@@ -41,3 +41,17 @@ node["php"]["configure_options"] = %W{
   --with-mysqli
 }
 include_recipe "php::source"
+
+#include_recipe "mysql::server"
+#include_recipe "database"
+
+#mysql_connection_info = {
+#  :host => "localhost",
+#  :username => "root",
+#  :password => node["mysql"]["server_root_password"]
+#}
+#
+#mysql_database "flg" do
+#  connection mysql_connection_info
+#  action :create
+#end
